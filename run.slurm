@@ -18,4 +18,4 @@ export http_proxy=http://frontend01:3128/
 
 module load singularity/3.7.0
 
-singularity run --pwd /wd --bind /beegfs/scratch/fhamann:/wd images/my-pytorch_latest.sif python3 scripts/feedforward.py
+singularity run --nv --pwd /wd --bind /beegfs/scratch/fhamann:/wd images/my-pytorch_latest.sif python3 scripts/feedforward.py
